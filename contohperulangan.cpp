@@ -7,8 +7,8 @@ using namespace std;
 int main()
 {
     int n;
-    int perulanganWhile = 0
-    int perulanganDo = 0;
+    int perulanganWhile = 0;
+    int PerulanganDo = 0;
 
     //perulangan dengan for 
     cout << "perulangan for pencacah naik" << endl;
@@ -47,3 +47,17 @@ while (n < 7)
 cout << "jumlah perulangan = " << perulanganWhile << endl;
 cout << "niali n terakhir = " << n << endl;
 
+//perulangan do while dengan angka acak
+cout << "perulangan Do While" << endl;
+srand(time(0));
+n = rand() % 10;
+cout << "nilai awal n = " << n << endl;
+do
+{
+    cout << "nilai n = " << n << endl;
+    n = rand() % 10;
+    PerulanganDo++;
+} while (n < 7);
+cout << "jumlah perulangan = " << perulanganWhile << endl;
+cout << "nilai n terakhir = " << n << endl;
+}
