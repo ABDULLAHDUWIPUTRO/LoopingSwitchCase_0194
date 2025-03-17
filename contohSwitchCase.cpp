@@ -15,3 +15,31 @@ string predikat (double ipk)
         return"cumlaude";
     }
 }
+
+int main(){
+    char pilihan;
+   
+    do
+    {
+cout << "pilih menu" << endl;
+cout << "1. cek nilai ipk" << endl;
+cout << "2. ceek predikat kelulusan" << endl;
+cout << "3. keluar";
+
+cout << "masukan pilihan (1/2/3) : ";
+cin >> pilihan;
+
+switch (pilihan)
+    {
+        case '1':
+        int sks;
+        double total;
+        cout << "masukan total nilai :";
+        cin >> total;
+        cout << "masukan jumlah sks :";
+        cin >> sks;
+        cout << "nilai ipk = " << hitungipk(total, sks) << endl;
+        break;
+    }
+}while (pilihan != 3); 
+}
